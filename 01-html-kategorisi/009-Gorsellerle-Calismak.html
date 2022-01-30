@@ -2,9 +2,11 @@
 
 <!-- img -->
 
-<img width="200" height="200" src="images/1.jpg" alt="Deri kitap kapagı" />
+<img width="200" height="200" src="images/1.jpg" alt="Deri kitap kapagı"/> <!-- alt > alternative, fotograf olmazsa onun yerine gosterilir -->
 
-<img src="https://picsum.photos/600/300" alt="" />
+<img src="C:/Users/chpat/Desktop/Photos/16CET16.png" alt="Mercedes-Benz"/>
+
+<img src="https://picsum.photos/600/300" alt=""/> <!-- lorem images -->
 
 <img
   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSadO-rX_E5Obuxzj15jaP_lgQhdfCDaSpBlA&usqp=CAU"
@@ -15,3 +17,67 @@
   src="https://assets.ubuntu.com/v1/25363584-Ubuntu-Dell-AI%3AML.svg"
   alt=""
 />
+
+<!-- DERS HARICI NOTLAR -->
+
+<!-- title="" Kullanımı
+Title özelliği kullanıcıyı bilgilendirme amacı taşır. 
+Cursor(mouse imleci) ile görselin üzerine gelince bu özelliğe verilen text mesajı görünür.
+Ek açıklama gerektirecek resimlerde kullanabiliriz. Bilgilendirme amacı taşır. -->
+<img width="500" height="500" src="C:/Users/chpat/Desktop/Photos/5fe32a768e813.png" title="linux_tux"/>
+
+<!-- border Kullanımı
+Görseli belirtilen kalınlıkta çerçeve içine alır. Daha gelişmiş CSS Border özelliği bunun yerine kullanılabilir.
+Aşağıda border örneği: Görsele 3 pixel kalınlıkta border verir. -->
+<img src="C:/Users/chpat/Desktop/Photos/01af9dd908a9443105d06b023a21d288.jpg" border="5" alt="girl"/>
+
+<!-- align Kullanımı
+Web sayfasında resmin gözükeceği pozisyonu belirlemede align özelliği kullanılır. 
+Bu özelliğe verilebilecek değerler şunlardır: left, right. Görselin sağa veya sola yaslı çıkmasını sağlar. -->
+<img src="C:/Users/chpat/Desktop/Photos/hashcat.png" align="right"/>
+
+<!-- Görsele Link Vermek
+Görsele link vermek için imgtag'i a taginin içerisinde kullanılır.
+Yönlendirilmek istenen yerin URL'i a taginin href özelliğine yazılır. Görsel ise a taginin açıklama kısmına eklenir. Örnek: https://jsfiddle.net/qcpfsev7/2/-->
+<a href="https://www1.nyc.gov/site/nypd/index.page">
+  <img src="C:/Users/chpat/Desktop/Photos/police_line.jpg" alt="Police_Line">
+</a>
+
+<!-- map ve area
+Görselleriniz hyperlink atamanız durumunda görselin tüm alanı link alanı haline dönüşecektir. 
+Görselin herhangi bir yerine tıklanılması durumunda görsel sizi tanımlanan bağlantıya gönderecektir. 
+<img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla belirlediğimiz bir alanı sadece link haline getirebiliriz. 
+  Eklediğimiz <area> etiketi kadar belirlenen alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+Örneğin Instagram'da bazı satıcılarda gördüğünüz bir insan fotoğraf üzerinde pantolon ve ayakkabının ürün linklerini ayrı ayrı vermek isterseniz kullanabilirsiniz. -->
+<img src="C:/Users/chpat/Desktop/Photos/simpsons_e46.jpg" alt="simpsons" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="14,24,280,280" alt="Computer" href="https://tr.wikipedia.org/wiki/Simpsonlar">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="http://www.bmwstylewheels.com">
+</map>
+
+<!-- onload Event'i Kullanımı
+Bu olay görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler.
+Herhangi bir nedenle görsel yüklenemezse ya da belirtilen adreste resim yoksa fonksiyon çalışmaz.
+Aşağıdaki örnekte görsel yüklenmesi tamamlandığında resimYuklendi() fonksiyonu çalışacak 
+ve ekrana Resim Yüklendi. uyarısı JavaScript tarafından bastırılacak. Bu konuyu ileride çok daha detaylı göreceğiz. -->
+<html>
+    <body>
+        <img width="1600" height="800" src="C:/Users/chpat/Desktop/Photos/trianglewallpaper.jpg" onload="resimYuklendi()" />
+    </body>
+    <script>
+        function resimYuklendi(){
+            alert("Resim yüklendi.");
+        }
+    </script>
+</html>
+
+<!-- picture Elementi ile Kullanım
+HTML5 ile gelen picture elementi web sayfamızda responsive image'ler kullanmamız konusunda büyük kolaylıklar sağlıyor.
+Bir tane img ve birden fazla source içerebilir. picture tagi ekran boyutlarına göre birden çok source kulllanmamızı sağlar,
+bu sayede ekran boyutu değiştikçe farklı image'leri kullanabilirsiniz.
+Örnek: Burada ekran genişliğinin 800 pikselden küçük olduğu durumlarda başka diğer koşullarda ise başka bir görsel kullanılacak. -->
+<picture>
+  <source srcset="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" media="(min-width: 800px)">
+  
+  <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+</picture>

@@ -2,11 +2,11 @@
 
 <!--
     etiket isimlerini direkt verebiliyoruz
-    + kardeş öğe
-    > içinde öğe
-    ^ yukarı çık  ve öğe oluştur.
+    + kardeş öğe (h1+h2, h1+p+p+h2)
+    > içinde öğe (ul>li, ul>li*5)
+    ^ yukarı çık  ve öğe oluştur. (ul>li*3^p = asagisinda girinti olmadan devam eder)
     * çarp -> p*3
-    lorem ???
+    lorem ??? (p>lorem7)
     . -> class
     # -> id 
 -->
@@ -24,7 +24,7 @@
 <h3 id="idollusun">Lorem.</h3>
 <!-- h3#idollusun>lorem1 -->
 
-<h3 class="deneme" id="idolussun">Lorem.</h3>
+<h3 class="deneme" id="idolussun">Lorem.</h3> <!-- class isimli olmasina dikkat. -->
 <!--h3.deneme#idolussun>lorem1-->
 
 <!-- ul>li.tepki  -->
@@ -38,3 +38,26 @@
   <li class="text-red"></li>
   <li class="text-red"></li>
 </ul>
+
+<!-- docs.emmet.io/cheat-sheet -->
+
+<ol>
+  <li>Lorem ipsum dolor sit amet.</li>
+  <li>Sed expedita eum hic provident?</li>
+  <li>Nisi doloremque earum perferendis eaque!</li>
+  <li>Quos architecto et consequatur dolorum.</li>
+  <li>Voluptates, adipisci cumque! Pariatur, quasi.</li>
+</ol>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero.</p>
+
+<!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
+
+<ol>
+  <li>Lorem ipsum dolor sit amet.</li>
+  <li>Voluptatum in animi unde a.</li>
+  <li>Nulla saepe voluptatum impedit. Explicabo!</li>
+</ol>
+<p>Lorem ipsum dolor sit.</p>
+<p>Delectus impedit iusto assumenda.</p>
+<h3>Lorem.</h3>
+<h1>LOREM.</h1>
