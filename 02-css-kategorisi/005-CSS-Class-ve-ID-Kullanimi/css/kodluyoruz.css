@@ -1,7 +1,7 @@
 /**************** Layout ************/
 
-/* class -> .text-red {} */
-/* #id-bilgisi -> .text-red {}  */
+/* class -> .text-red {} -> nokta ile (sadece css icerisinde) */
+/* #id-bilgisi -> .text-red {}  -> hashtag ile baslar (sadece css icerisinde) */
 
 h1,
 h2,
