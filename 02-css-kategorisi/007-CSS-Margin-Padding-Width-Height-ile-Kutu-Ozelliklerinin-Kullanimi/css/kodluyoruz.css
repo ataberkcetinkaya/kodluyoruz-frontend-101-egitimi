@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* margin ile 2 kutunun arasindaki mesafeyi ayarliyoruz */
+  padding: 0; /* padding ile de 1 kutunun icerisindeki ferahligi ayarlariz */
 }
 .container {
   width: 1000px;
