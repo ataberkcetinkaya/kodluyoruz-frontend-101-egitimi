@@ -58,7 +58,7 @@ if (examGrade >= 0 && examGrade <= 100) {
         textInfo += " FD"
     } else if (examGrade < 50) {
         textInfo = `${FROWN} FF`
-        info.classList.remove('text-primary')
+        info.classList.remove('text-primary') //ilk if icerisindeki textprimary class'i kaldiriyoruz
         info.classList.add('text-danger')
     }
 } else {

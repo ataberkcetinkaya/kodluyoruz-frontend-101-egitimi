@@ -11,4 +11,4 @@ console.log(title.innerHTML)
 let link = document.querySelector("#kodluyoruzLink")
 link.innerHTML += " degisti"
 link.style.color = "red"
-link.classList.add('btn')
+link.classList.add('btn') //class ekler (html'e icerisine)

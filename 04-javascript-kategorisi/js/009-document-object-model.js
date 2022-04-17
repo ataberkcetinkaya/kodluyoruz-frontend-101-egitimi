@@ -1,5 +1,6 @@
 // DOM
 // https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+// Google > JavaScript change document style
 
 // pathname
 console.log(document.location.pathname)
