@@ -1,6 +1,6 @@
 // localStorage Bolum Sonu Egzersizi
 
-let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0
+let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0 //local storage'ta counter bilgisi varsa onu ekrana bas yoksa : iki nokta ustusteden sonraki bilgi olan 0'i yaz.
 let counterDOM = document.querySelector('#counter')
 let increaseDOM = document.querySelector('#increase')
 let decreaseDOM = document.querySelector('#decrease')

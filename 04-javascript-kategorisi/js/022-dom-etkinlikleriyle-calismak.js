@@ -7,5 +7,5 @@ greeting.addEventListener("click", domClick)
 
 function domClick() {
     console.log("etkinlik denetlendi")
-    this.style.color == "red" ? this.style.color = "black" : this.style.color = "red"
+    this.style.color == "red" ? this.style.color = "black" : this.style.color = "red" //rengi her seferinde bastan kontrol edip degismesini sagliyor.
 }
