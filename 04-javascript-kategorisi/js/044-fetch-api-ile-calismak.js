@@ -13,7 +13,7 @@ let userListDOM = document.querySelector("#userList")
 
 // API uzerinden veri cektik
 fetch("https://jsonplaceholder.typicode.com/posts").then(
-  response => response.json()
+  response => response.json() //gelen response'u => response.json() ile json'a dönüştür
 ).then(responseJson => {
   responseJson.forEach(item => {
     let liDOM = document.createElement('li')

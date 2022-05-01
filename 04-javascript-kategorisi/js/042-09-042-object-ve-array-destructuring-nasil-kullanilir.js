@@ -16,7 +16,8 @@ let settings = {
 // console.log(userName)
 
 // rename && destructuring
-let {userName: user, password, isActive, ip:serverIP, serverName} = settings
+let {userName: user, password, isActive, ip: serverIP, serverName} = settings //süslü parantez icindekiler artik degisken ve onlar baska yerde degistirilip kullanilabilir.
+//userName: user (userName'i user olarak kullaniyoruz, ayni sekilde ip: serverIP)
 
 console.log(user, password, isActive, serverIP, serverName)
 console.log(settings)
@@ -24,7 +25,7 @@ console.log(user)
 
 
 // obje icindeki bazi bilgilerin cikarilmasi
-let {userName:userName2, password:password2, isActive:isActive2, ...newSettings} = settings
+let {userName:userName2, password:password2, isActive:isActive2, ...newSettings} = settings //KALAN BILGILER ...newSettings altinda
 // eger degisken ismi daha once tanimlanmadiysa:
 // let {userName, password, isActive, ...newSettings} = settings
 
@@ -49,6 +50,6 @@ let score = [100, 200, 300, 400]
 let [score1, score2, ...otherScore] = score
 console.log(score1, score2, otherScore)
 
-// object kopyalama ile ayni... let settings2 = {...settings}
+//Array kopyalama da object kopyalama ile ayni... let settings2 = {...settings}
 let copyOfScore = [...score]
 console.log(copyOfScore)

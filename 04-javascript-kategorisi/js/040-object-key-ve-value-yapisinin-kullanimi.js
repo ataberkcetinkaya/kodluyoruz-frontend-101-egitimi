@@ -5,7 +5,7 @@
 let laptop1 = {
   brand: "Apple", 
   model: "MacBook Pro",
-  "2kg": 2,
+  "2kg": 2, //key bilgisi string karakter ile baslamali
   modelName: "MacBook Pro",
   // model-name: "MacBook Pro",
   model_name: "MacBook Pro"
@@ -16,11 +16,12 @@ console.log(laptop1)
 
 console.log(laptop1.brand, laptop1["brand"])
 console.log(laptop1.model, laptop1["model"])
-console.log(laptop1["2kg"])
+
+console.log(laptop1["2kg"]) //8. satir ile baglantili
 
 // Anahtar bilgisine yeni deger eklemek
-laptop1.brand = "Mac"
-laptop1["brand"] = "Mac1"
+laptop1.brand = "Mac" //yontem1
+laptop1["brand"] = "Mac1" //yontem2
 console.log(laptop1)
 
 // Yeni Bilgi Eklemek
@@ -29,8 +30,8 @@ console.log(laptop1)
 
 // Anahtar Bilgilerine Ulasmak (keys) -> Object.keys(item)
 keys = Object.keys(laptop1)
-console.log(keys)
-console.log(Object.keys(laptop1))
+console.log(keys) //yontem1
+console.log(Object.keys(laptop1))//yontem2
 
 keys.forEach(keyInfo => { 
   console.log(keyInfo)

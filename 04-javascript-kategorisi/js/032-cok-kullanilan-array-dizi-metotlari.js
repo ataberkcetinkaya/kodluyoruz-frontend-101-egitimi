@@ -8,13 +8,14 @@ let items = [1, 2, 3, 4, 5]
 let femaleUsers = ["Ayse", "Hulya", "Merve"]
 let maleUsers = ["Ahmet", "Hasan", "Mehmet"]
 
-items.unshift(femaleUsers)
+items.unshift(femaleUsers) //items icine en basa femaleUsers array'ini atiyoruz
 
-items.push(maleUsers)
+items.push(maleUsers) //items icine en sona maleUsers array'ini atiyoruz
 
 console.log(items)
 
-console.log(items.length)
+console.log(items.length) // 7
+
 console.log(items[0].length) // Array icindeki istedigimiz Array'in length bilgisini aldik
 console.log(items[0][0]) // Ayse bilgisine ulastik :)
 
@@ -27,7 +28,7 @@ console.log("items: ", items)
 items.unshift("lorem")
 items.push("ipsum")
 
-console.log( items.indexOf("ipsum") )
+console.log(items.indexOf("ipsum"))
 
 // Array Kopyalamak -> slice, [...ES6]
 let copyItems = items
